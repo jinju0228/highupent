@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'Gilroy-ExtraBold';
+    src:url('../fonts/Gilroy-ExtraBold.otf');
+}
+
+body{
+    background-color: #000;
+    font-family:'Gilroy-ExtraBold','Noto Sans KR', sans-serif;
+}
+.left_header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:240px;
+    height:100vh;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border-right:2px solid rgba(255,255,255,0.15);
+}
+.logo{
+    display: block;
+    width:100px;
+    height:50px;
+    background-image: url(../img/site-logo-highup.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+.hamburger{
+    width:40px;
+    height:40px;
+    padding:5px;
+    box-sizing: border-box;
+    text-align: center;
+    
+}
+.hamburger>span{
+    display:block
+}
+.hamburger>.ham1{
+    width:22px;
+    height:3px;
+    background-color: #fff;
+    margin-bottom:10px;
+}
+.hamburger>.ham2{
+    width:30px;
+    height:3px;
+    background-color: #fff;
+    margin-top:10px;
+}
+
+
+
+
+
+
+section{
+    width:1440px;
+    margin-left:240px;
+    height: 100vh;    
+    padding:0 80px;
+}
+
+
+
+
+
+footer{
+    padding:120px 0 60px 320px;
+    color:#fff;
+}
+footer>p{
+    font-size:14px;
+
+    margin-bottom: 20px;
+}
+footer>b{
+    display: block;
+    font-size: 10px;
+}
+.fix_title{
+    display:inline-block;
+    position:absolute;
+    top:110px;
+    right:70px;
+    color:#fff;
+    font-size:10px;
+    transform: rotate(90deg);
+}
+
+
+@media (max-width: 1900px){
+    section{
+        width:calc(100% - 490px);
+    }
+} 
